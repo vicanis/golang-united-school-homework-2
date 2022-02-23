@@ -69,7 +69,7 @@ func CalcSquare(sideLen float64, sidesNum SidesNumType) float64 {
 		return (math.Pow(sideLen, 2) * math.Sqrt(3)) / 2.0
 
 	case SidesSquare:
-		return float64(sideLen) * float64(sideLen)
+		return (float64(sideLen) * float64(sideLen)) / 2.0
 	}
 
 	return float64(0)
