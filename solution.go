@@ -10,8 +10,10 @@ package square
 
 import "math"
 
+// SidesNumType figure sides number
 type SidesNumType int
 
+// Constants of figure sides number
 const (
 	SidesCircle = iota
 	_
@@ -20,6 +22,7 @@ const (
 	SidesSquare
 )
 
+// CalcSquare calculates square of some type of figures defined above
 func CalcSquare(sideLen float64, sidesNum SidesNumType) float64 {
 	switch (sidesNum) {
 	case SidesCircle:
