@@ -52,24 +52,12 @@ func CalcSquare(sideLen float64, sidesNum SidesNumType) float64 {
 			s = x * a/2
 			s = a*sqrt(3)/2 * a/2
 			s = a^2*sqrt(3)/4
-
-			    /|\
-			a  / | \  a
-		      /  |  \
-			 /   |   \
-			-----------
-			     a
-
-		    Square: prev * 2
-
-		    s = a^2*sqrt(3)/4 * 2
-		    s = a^2*sqrt(3)/2
 		*/
 
-		return (math.Pow(sideLen, 2) * math.Sqrt(3)) / 2.0
+		return (math.Pow(sideLen, 2) * math.Sqrt(3)) / 4.0
 
 	case SidesSquare:
-		return (float64(sideLen) * float64(sideLen)) / 2.0
+		return float64(sideLen) * float64(sideLen)
 	}
 
 	return float64(0)
